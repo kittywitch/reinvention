@@ -1,0 +1,37 @@
+{
+  "pins": {
+    "home-manager": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "home-manager"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "de4cfffc98f43ab8ba90739b56991f068f9e9018",
+      "url": "https://github.com/nix-community/home-manager/archive/de4cfffc98f43ab8ba90739b56991f068f9e9018.tar.gz",
+      "hash": "sha256-bPKv7BcIOGp4R1Q3hKhiD2CT3+7D6ibNIaJfEJdeOzo="
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixos-unstable",
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-26.05pre944744.ec7c70d12ce2/nixexprs.tar.xz",
+      "hash": "sha256-BKNoPyCG5hRTJUNhwnL9PlWFujr8/18VzggAVRXl6us="
+    },
+    "std": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "flakelib",
+        "repo": "std"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "53aa63f4aaac4a4939ae132ee17f42a10a02dad0",
+      "url": "https://github.com/flakelib/std/archive/53aa63f4aaac4a4939ae132ee17f42a10a02dad0.tar.gz",
+      "hash": "sha256-RlRbcRXRgvt/gCVb3FnhLzARRiFNNangaw2GMaXhKsQ="
+    }
+  },
+  "version": 7
+}
