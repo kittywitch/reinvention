@@ -2,7 +2,11 @@ let
   sources = import ./npins;
   Std = import sources.std;
   inherit (Std) List Tuple Set;
-  pkgs = import sources.nixpkgs {};
+  pkgs = import sources.nixpkgs {
+    overlays = [
+      (import ./pkgs { inherit Std; })
+    ];
+  };
   inherit (pkgs) lib;
 
 in rec {
