@@ -8,9 +8,12 @@ Flakes suck. Flake-parts sucks. Dendritic pattern shilling is endless. Hjem is h
 
 ## TODOs
 
+- [ ] Move to an actual meta module
 - [ ] Reinstall koishi
 - [ ] Koishi minimal config
-- [ ] River and [kwm](https://github.com/kewuaa/kwm)
+- [ ] [River](https://codeberg.org/river/river) and [kwm](https://github.com/kewuaa/kwm)
+  - [ ] River
+  - [x] kwm
 - [ ] Finish up shell configuration
 - [ ] Include desktop programs
 - [ ] Port servers over, clean them up
