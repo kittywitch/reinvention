@@ -20,14 +20,17 @@ in rec {
         inherit Std sources;
       };
     } // args);
+    builderPair = name: builder: Tuple.tuple2 name builder; 
   in readDir ./hosts
      |> Set.keys
-     |> List.map (name: Tuple.tuple2 name (builder {
-    system = "x86_64-linux";
-    modules = [
-        ./hosts/${name}/configuration.nix
-        ./modules/nixos/home.nix
-    ];
-  }))
-  |> Set.fromList;
+     |> List.map (name:
+       builder {
+          system = "x86_64-linux";
+          modules = [
+            ./hosts/${name}/configuration.nix
+            ./modules/nixos/home.nix
+          ];
+        }
+        |> builderPair name)
+      |> Set.fromList;
 }

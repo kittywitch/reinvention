@@ -8,6 +8,7 @@ Flakes suck. Flake-parts sucks. Dendritic pattern shilling is endless. Hjem is h
 
 ## TODOs
 
+- [ ] Provide system in a per-host manner without insanity
 - [ ] Move to an actual meta module
 - [ ] Reinstall koishi
 - [ ] Koishi minimal config
